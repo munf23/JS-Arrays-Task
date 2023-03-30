@@ -1,0 +1,84 @@
+[
+  {
+    "reviewerName": "Michelle Obama",
+    "description": "Former First Lady of the United States and author",
+    "books": [
+      {
+        "title": "Becoming",
+        "author": "Michelle Obama",
+        "genre": "Memoir",
+        "summary": "A memoir that tells the story of Michelle Obama's life, from her childhood on the South Side of Chicago to her years as an executive balancing motherhood and work, to her time spent at the White House.",
+        "rating": 4.8
+      },
+      {
+        "title": "The Warmth of Other Suns",
+        "author": "Isabel Wilkerson",
+        "genre": "Non-fiction",
+        "summary": "A historical study of the Great Migration, the movement of six million African Americans from the rural South to the urban North between 1915 and 1970.",
+        "rating": 4.5
+      },
+      {
+        "title": "The Overstory",
+        "author": "Richard Powers",
+        "genre": "Fiction",
+        "summary": "An epic novel about the lives of trees and the people who love them, weaving together disparate stories of nine individuals whose lives become deeply connected to the natural world.",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "reviewerName": "Bill Gates",
+    "description": "Co-founder of Microsoft and philanthropist",
+    "books": [
+      {
+        "title": "Sapiens",
+        "author": "Yuval Noah Harari",
+        "genre": "Non-fiction",
+        "summary": "A sweeping history of humankind, from the emergence of Homo sapiens in Africa to the present day, exploring how our species has developed and what sets us apart from other animals.",
+        "rating": 4.5
+      },
+      {
+        "title": "The Rosie Project",
+        "author": "Graeme Simsion",
+        "genre": "Fiction",
+        "summary": "A romantic comedy about a genetics professor who devises a questionnaire to find his perfect wife, but ends up falling for a woman who doesn't meet any of his criteria.",
+        "rating": 4.2
+      },
+      {
+        "title": "The Better Angels of Our Nature",
+        "author": "Steven Pinker",
+        "genre": "Non-fiction",
+        "summary": "A controversial argument that violence has decreased over time and that we live in the most peaceful era in human history, despite the impression given by the news.",
+        "rating": 4.4
+      }
+    ]
+  },
+  {
+    "reviewerName": "Chimamanda Ngozi Adichie",
+    "description": "Nigerian author and feminist",
+    "books": [
+      {
+        "title": "The God of Small Things",
+        "author": "Arundhati Roy",
+        "genre": "Fiction",
+        "summary": "A tragic story of a family in Kerala, India, whose lives are torn apart by societal norms and personal desires.",
+        "rating": 4.6
+      },
+      {
+        "title": "Homegoing",
+        "author": "Yaa Gyasi",
+        "genre": "Fiction",
+        "summary": "A novel that traces the lives of two half-sisters and their descendants over three centuries, from the Gold Coast of Africa to modern-day America.",
+        "rating": 4.5
+      },
+      {
+        "title": "We Should All Be Feminists",
+        "author": "Chimamanda Ngozi Adichie",
+        "genre": "Non-fiction",
+        "summary": "A personal and powerful essay about what it means to be a feminist in today's world, drawing on examples from Adichie's own life and experiences.",
+        "rating": 4.4
+      }
+    ]
+  }
+]
+
