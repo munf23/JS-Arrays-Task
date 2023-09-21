@@ -2,10 +2,16 @@
  Task 1: 
    Create a function sumArray that receives an array of numbers as a parameter and returns the sum of all the numbers in the array.
 **************************************************************/
-function sumArray(numbers) {
+
+function sumArray(sumarray) {
   //TODO: Add your code here
+  const sum = sumarray.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+  });
+  return sum;
+  let x;
 }
-// console.log(sumArray([4, 3, 2, 5, -10]));
+console.log(sumArray([4, 3, 2, 5, -10]));
 
 /**************************************************************
  Task 2:
@@ -14,10 +20,14 @@ function sumArray(numbers) {
 **************************************************************/
 function findFirstStringStartingWithLetter(letter, strings) {
   //TODO: Add your code here
+  return strings.find((string) => {
+    return string.toLowerCase().startsWith(letter.toLowerCase());
+  });
 }
-// console.log(
-//   findFirstStringStartingWithLetter("h", ["Memory", "Hello", "Happy"])
-// );
+
+console.log(
+  findFirstStringStartingWithLetter("h", ["Memory", "Hello", "Happy"])
+);
 
 /**************************************************************
  Task 3:
@@ -26,16 +36,20 @@ function findFirstStringStartingWithLetter(letter, strings) {
 **************************************************************/
 function isPresentIncluded(presentName, presents) {
   //TODO: Add your code here
+  return presents.map((present) => {
+    return present.toLowerCase().includes(presentName.toLowerCase());
+  });
 }
-// console.log(
-//   isPresentIncluded("puzzle", [
-//     "Sparkling Surprise",
-//     "Enchanted Elegance",
-//     "Whimsical Wonder",
-//     "Joyful Jingle",
-//     "Puzzle",
-//   ])
-// );
+
+console.log(
+  isPresentIncluded("puzzle", [
+    "Sparkling Surprise",
+    "Enchanted Elegance",
+    "Whimsical Wonder",
+    "Joyful Jingle",
+    "Puzzle",
+  ])
+);
 
 /**************************************************************
  Task 4:
@@ -44,21 +58,22 @@ function isPresentIncluded(presentName, presents) {
 **************************************************************/
 function sortStudentsAlphabetically(students) {
   //TODO: Add your code here
+  return students.sort();
 }
-// console.log(
-//   sortStudentsAlphabetically([
-//     "Eve",
-//     "Jasmia",
-//     "Husnia",
-//     "Grace",
-//     "Bob",
-//     "Charlie",
-//     "Alice",
-//     "Dave",
-//     "Um abbas",
-//     "Frank",
-//   ])
-// );
+console.log(
+  sortStudentsAlphabetically([
+    "Eve",
+    "Jasmia",
+    "Husnia",
+    "Grace",
+    "Bob",
+    "Charlie",
+    "Alice",
+    "Dave",
+    "Um abbas",
+    "Frank",
+  ])
+);
 
 /**************************************************************
   Task 5:
@@ -70,8 +85,23 @@ function sortStudentsAlphabetically(students) {
 **************************************************************/
 function separateOddEven(numbers) {
   //TODO: Add your code here
+  let odd = [];
+  let even = [];
+  numbers.forEach(number);
+  function number(value, ind, arr) {
+    if (value % 2 === 0) {
+      even.push(value);
+    } else {
+      odd.push(value);
+    }
+  }
+  console.log(`odd number ${odd}`);
+  console.log(`even number ${even}`);
+
+  return numbers;
 }
-// console.log(separateOddEven([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+
+console.log(separateOddEven([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
 /**************************************************************
  Task 6:
@@ -90,15 +120,19 @@ function separateOddEven(numbers) {
 **************************************************************/
 function removeItem(code, items) {
   //TODO: Add your code here
+  return items.filter((item) => {
+    return item.code !== code;
+  });
 }
-// console.log(
-//   removeItem("#153", [
-//     { code: "#153", name: "Ball" },
-//     { code: "#147", name: "Scissors" },
-//     { code: "#249", name: "Pillow" },
-//     { code: "#149", name: "Tissue" },
-//   ])
-// );
+
+console.log(
+  removeItem("#153", [
+    { code: "#153", name: "Ball" },
+    { code: "#147", name: "Scissors" },
+    { code: "#249", name: "Pillow" },
+    { code: "#149", name: "Tissue" },
+  ])
+);
 
 /**************************************************************
 Task 7:
@@ -145,14 +179,22 @@ Task 7:
 **************************************************************/
 function updateGrades(curve, students) {
   //TODO: Add your code here
+  return students.map((student) => {
+    if (student.type === "regular") {
+      student.grade += curve;
+      return student
+    } else {
+      return student
+    }
+  });
 }
-// console.log(
-//   updateGrades(10, [
-//     { firstName: "Jaber", lastName: "jabarbar", grade: 10, type: "regular" },
-//     { firstName: "Hamza", lastName: "Alhamazi", grade: 12, type: "regular" },
-//     { firstName: "Jasem", lastName: "Jamasmas", grade: 15, type: "nerd" },
-//     { firstName: "Kadhim", lastName: "Khadhmia", grade: 5, type: "regular" },
-//     { firstName: "Um Abbas", lastName: "IDK", grade: 20, type: "nerd" },
-//     { firstName: "Johny", lastName: "Micle", grade: 10, type: "regular" },
-//   ])
-// );
+console.log(
+  updateGrades(10, [
+    { firstName: "Jaber", lastName: "jabarbar", grade: 10, type: "regular" },
+    { firstName: "Hamza", lastName: "Alhamazi", grade: 12, type: "regular" },
+    { firstName: "Jasem", lastName: "Jamasmas", grade: 15, type: "nerd" },
+    { firstName: "Kadhim", lastName: "Khadhmia", grade: 5, type: "regular" },
+    { firstName: "Um Abbas", lastName: "IDK", grade: 20, type: "nerd" },
+    { firstName: "Johny", lastName: "Micle", grade: 10, type: "regular" },
+  ])
+);
